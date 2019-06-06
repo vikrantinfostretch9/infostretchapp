@@ -13,7 +13,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'codebuild -list'
+    script: 'xcodebuild -list'
 - task: Xcode@5
   inputs:
     actions: 'clean build'
